@@ -4,17 +4,19 @@
  * Nodejs 9.x.x 
  * npm 6.x.x
 
-##Install all package
-  npm install
+## Use the repo
 
-##Starts the development server.
-  npm start
+###Install all package
+  `npm install`
 
-##Bundles the app into static files for production.
-  npm run build
+###Starts the development server.
+  `npm start
 
-##Starts the test runner.
-  npm test
+###Bundles the app into static files for production.
+  `npm run build`
 
-##Removes this tool and copies build dependencies, configuration files and scripts into the app directory. If you do this, you can’t go back!
-  npm run eject
+###Starts the test runner.
+  `npm test`
+
+###Removes this tool and copies build dependencies, configuration files and scripts into the app directory. If you do this, you can’t go back!
+  `npm run eject`
