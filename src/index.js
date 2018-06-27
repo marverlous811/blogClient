@@ -1,15 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Main from './View/Screens/Main';
 
-class Main extends React.Component{
+class Index extends React.Component{
 	render(){
 		return(
-			<h1>Hello World</h1>
+			<Main/>
 		)
 	}
 }
 
 ReactDOM.render(
-  <Main />,
+  <Index />,
   document.getElementById('root')
 );
