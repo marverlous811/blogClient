@@ -1,5 +1,6 @@
 import React from 'react';
-import './dropdown.css'
+import './dropdown.css';
+import {Link} from 'react-router-dom';
 
 export default class Dropdown extends React.Component{
     constructor(props){
@@ -13,9 +14,12 @@ export default class Dropdown extends React.Component{
                     {this.props.menu}
                 </a>
                 <div className="dropdown-menu dropdown-custom" aria-labelledby="navbarDropdownMenuLink">
-                    {this.props.submenuName.map((name) => 
-                        <a className="dropdown-item menu-text">{name}</a>
-                    )}
+                    {this.props.submenuName.map((name) => {
+                        let _uriPath = this.props.uriPath+"/"+name;
+                        return(
+                            <Link key={name} to={_uriPath} className="dropdown-item menu-text">{name}</Link>
+                        ) 
+                    })}
                 </div>
             </li>
         )

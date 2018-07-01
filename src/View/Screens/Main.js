@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Header from '../Components/Header/header';
+import Container from '../Components/Container/container';
 import $ from 'jquery';
 import Bootstrap  from 'bootstrap';
 
@@ -13,9 +14,9 @@ export default class Main extends React.Component{
         return(
             <div>
                 <Header/>
-                {/* <Navbar/>
+                
                 <Container/>
-                <Footer/> */}
+                {/* <Footer/> */}
             </div>
         );
     }
